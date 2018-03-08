@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        // create product
+        var product1 = {id:101, name:"Red Apple", price:1.99};
+
+        // Serialize object to JSON string
+        var jsonString = JSON.stringify(product1);
+        document.write(jsonString);
+        document.write("<br>")
+
+        // Deserialize string
+        var str = '{"id":101,"name":"Red Apple","price":1.99}';
+        var product2 = JSON.parse(str);
+
+        document.write('Product ID: '+product2.id+'<br>')
+        document.write('Product name: '+product2.name+'<br>')
+        document.write('Product price: '+product2.price+'<br>')
+    </script>
+</head>
+
+<body>
+    <h1>
+        Welcome to the HTML App!
+    </h1>
+</body>
+
+</html>
