@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SeDes</title>
+    <script>
+        var p1 = { id: 101, name: 'Product-101', price: 99 };
+        jsonText = JSON.stringify(p1)
+
+        document.write(jsonText)
+
+        var csString = '{"ID":123,"Name":"Banana","Price":0.23}';
+
+        var importBanana = JSON.parse(csString);
+
+        bananaText = JSON.stringify(importBanana)
+
+        document.write(bananaText)
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
